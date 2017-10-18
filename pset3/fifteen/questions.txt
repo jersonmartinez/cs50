@@ -1,0 +1,19 @@
+questions.txt
+
+Computer Science 50
+Problem Set 3
+
+0. TODO
+1. TODO
+2. TODO
+3. TODO
+
+
+1- Con las dimensiones minimas y máximas contempladas
+en las variables tipo constantes.
+
+2- De ficheros.
+
+3- greet
+
+4- move and won, también implementé una extra, para reducir código.
