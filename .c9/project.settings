@@ -12,11 +12,11 @@
     },
     "cs50": {
         "debug": {
-            "@ver": 8
+            "@ver": 10
         },
         "info": {
             "@info_revision": 3,
-            "@latestVersion": 121,
+            "@latestVersion": 122,
             "@public": false,
             "@update_revision": 3
         },
