@@ -1,9 +1,39 @@
-0.  TODO
-1.  TODO
-2.  TODO
-3.  TODO
-4.  TODO
-5.  TODO
+0.
+    GIF:    8bits (256 colores)
+    JPEG:   24bits (16,777,215 de colores)
+    BMP:    24bits (16,777,215 de colores)
+    PNG:    64bits (Al final aparece -1 en la calculadora - Error)
+
+1.
+    GIF (Soporta la animación)
+
+2.
+    Deferencia entre compresión con pérdida y sin pérdida
+        Una compresión sin pérdidas devuelve la imagen descomprimida exactamente igual a la original.
+        Por el contrario, la compresión con pérdidas acepta alguna degradación en la imagen de cara a una mayor compresión.
+
+3.
+    Formato comprimido con pérdidas (Lossy)
+        PNG, BMP, GIF
+
+4.
+    El OS almacena los datos en clústeres, cuyo tamaño están dados por el
+    tipo de tabla de asignación de ficheros (FAT) que esté utilizando.
+
+    Esta guarda los vínculos entre los clústeres que están interconectados
+    formando un fichero. Algunos de los errores de restauración, ocurren cuando
+    estos están dañados.
+
+    El fichero no se elimina realmente del disco duro; lo único que realiza es cambiar la
+    ubicación del fichero eliminado, que pasa a apuntar a la papelera. Los clústeres de
+    datos nos se modifican en modo alguno. Aunque esto también se elimine de la papelera,
+    lo cierto es que los clústeres permanecen intactos, sólo que esta vez la entrada del fichero
+    en la FAT, se actualiza, de manera que los clústeres quedan libres para ser actualizado, y el
+    primer carácter del nombre del fichero se cambia para reflejar este estado.
+
+5.
+    Aplicando formato a bajo nivel.
+
 6.  TODO
 7.  TODO
 8.  TODO
