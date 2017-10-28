@@ -34,7 +34,13 @@
 5.
     Aplicando formato a bajo nivel.
 
-6.  TODO
+6.
+    Es una librería (cabecera) que declara un conjunto de tipos int que tienen límites
+    de anchos específicos (número de bits utilizados para almacenar su valor), la cual este
+    debe definir el conjunto de macros correspondientes.
+
+    Éstas macros especifican dichos límites de los tipos declarados y construyen constantes.
+
 7.  TODO
 8.  TODO
 9.  TODO
