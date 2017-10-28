@@ -41,15 +41,42 @@
 
     Éstas macros especifican dichos límites de los tipos declarados y construyen constantes.
 
-7.  TODO
-8.  TODO
-9.  TODO
-10. TODO
-11. TODO
-12. TODO
-13. TODO
-14. TODO
-15. TODO
-16. TODO
-17. TODO
+7.
+    Especifican el ancho (número de bits) de los tipos int asignados y no asignaddos
+
+8.
+    BYTE:   8
+    DWORD:  32
+    LONG:   32
+    WORD:   16
+
+9.
+    En ASCII, los primeros dos bytes son el carácter 'B' y 'M'
+
+10.
+    bfSize, describe el tamaño del fichero completo en bytes.
+    biSize, es el tamaño de la estructura BITMAPINFOHEADER en bytes.
+
+11.
+    Significa que la orientación vertical de la imagen es de arriba hacia abajo.
+
+12.
+    El campo es: biBitCount
+
+13.
+    Lo devolvería en caso de que no se pase en los argumentos la salida del fichero entrante.
+
+14.
+    Para que lea 1 byte a la vez.
+
+15.
+    El tamaño de cada línea, ya que debe ser múltilo de 4.
+
+16.
+    Se desplaza a una ubicación en específica (inicio, actual o final) de un fichero
+    para hacer la búsqueda desde alguno de esos ángulos.
+
+17.
+    Busca la ubicación de CURNET.
+
 18. TODO
