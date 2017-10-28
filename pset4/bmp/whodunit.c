@@ -81,6 +81,20 @@ int main(int argc, char* argv[])
             // read RGB triple from infile
             fread(&triple, sizeof(RGBTRIPLE), 1, inptr);
 
+            //Haciendo los cambios necesarios
+            //Rostro = Convertir de rojo a blanco
+            if (triple.rgbtRed == 0xff && triple.rgbtGreen == 0x00 && triple.rgbtBlue == 0x00){
+                triple.rgbtGreen = 0xff;
+                triple.rgbtBlue = 0xff;
+            }
+
+            //Convertir de rojo y blanco a negro
+            //  if ((triple.rgbtRed == 0xff && triple.rgbtGreen == 0x00 && triple.rgbtBlue == 0x00) || (triple.rgbtRed == 0xff && triple.rgbtGreen == 0xff && triple.rgbtBlue == 0xff)){
+            //     triple.rgbtRed = 0x00;
+            //     triple.rgbtGreen = 0x00;
+            //     triple.rgbtBlue = 0x00;
+            // }
+
             // write RGB triple to outfile
             fwrite(&triple, sizeof(RGBTRIPLE), 1, outptr);
         }
@@ -90,9 +104,7 @@ int main(int argc, char* argv[])
 
         // then add it back (to demonstrate how)
         for (int k = 0; k < padding; k++)
-        {
             fputc(0x00, outptr);
-        }
     }
 
     // close infile

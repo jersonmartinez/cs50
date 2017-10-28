@@ -79,4 +79,5 @@
 17.
     Busca la ubicación de CURNET.
 
-18. TODO
+18.
+    Un rostro.
