@@ -12,21 +12,15 @@
 
 #include "bmp.h"
 
-int main(int argc, char* argv[])
-{
-    // ensure proper usage
-    if (argc != 4)
-    {
+int main(int argc, char* argv[]){
+    if (argc != 4){
         printf("Usage: resize scale infile outfile\n");
         return 1;
     }
 
-    // remember scale
     int scale = atoi(argv[1]);
 
-    // ensure n is is a positive int less than or equal to 100
-    if(scale > 100 || scale < 1)
-    {
+    if(scale > 100 || scale < 1){
         printf("Scale must be a positive int less than or equal to 100\n");
         return 1;
     }
