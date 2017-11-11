@@ -1,0 +1,21 @@
+{%extends "layout.html" %}
+
+{% block tilte %}
+Store
+{% endblock %}
+
+{% block body %}
+<h1>Store</h1>
+<form action="{{ url_for('store') }}" method="post">
+    <input type="number" name="foo" value="0" />Foo
+    <br/>
+    <input type="number" name="bar" value="0" />Bar
+    <br/>
+    <input type="number" name="baz" value="0" />Baz
+    <br/>
+    <input type="submit" value="Purchase" />
+</form>
+<p>
+    View your <a href="{{ url_for('cart') }}">Shopping cart</a>.
+</p>
+{% endblock%}
