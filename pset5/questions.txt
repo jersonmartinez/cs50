@@ -1,8 +1,9 @@
 0.
-    Es la palabra que tiene la mayor longitud en el diccionario (45 caracteres).
+        Es la palabra que tiene la mayor longitud en el diccionario (45 caracteres).
     Es una enfermedad pulmonar.
+
 1.
-    Obtiene medidas de uso de recursos para un proceso o más de uno,
+        Obtiene medidas de uso de recursos para un proceso o más de uno,
     como el tiempo de CPU y la memoria utilizada.
 
 2.
@@ -19,39 +20,40 @@
     los tiempos de carga antes y después de la lectura de un texto. El bucle para
     en main () intenta leer el texto por símbolo, para leer palabras separadas.
 
-    Se completa una palabra cuando se leen uno o más símbolos alfabéticos, y cuando
+        Se completa una palabra cuando se leen uno o más símbolos alfabéticos, y cuando
     encontramos un carácter no alfanumérico (como barra espaciadora o nueva línea).
     Si hay un dígito, o una cuerda tiende a ser demasiado larga, atravesamos esta
     palabra y no la revisaremos para detectar errores ortográficos. Si no, lo haremos
-    revise nuestra palabra para detectar errores ortográficos, restablezca el índice de palabras a cero y continúe con el ciclo de lectura de símbolos.
+    revise nuestra palabra para detectar errores ortográficos, restablezca el índice de
+    palabras a cero y continúe con el ciclo de lectura de símbolos.
 
 
 5.
-    Primero, debemos asignar una memoria para una cadena antes de leerla desde un archivo,
+        Primero, debemos asignar una memoria para una cadena antes de leerla desde un archivo,
     y no hay límites de la longitud de una palabra en un archivo de texto.
 
-    El uso de fscanf también puede causar problemas con cadenas alfanuméricas o textos
+        El uso de fscanf también puede causar problemas con cadenas alfanuméricas o textos
     que contengan errores de formato. Esto es muy no es flexible para nosotros.
 
 6.
-    Porque no queremos que esos parámetros se modifiquen accidentalmente en las funciones.
+        Porque no queremos que esos parámetros se modifiquen accidentalmente en las funciones.
     Es una especie de medida de seguridad.
 
 7.
-    Usé la estructura. Para cada nodo trie, hay un booleano para indicar si existe esta palabra,
+        Usé la estructura. Para cada nodo trie, hay un booleano para indicar si existe esta palabra,
     y otros 27 secundarios para cada letra y apóstrofe (').
 
 8.
     Al principio fue bastante lento porque se tenía en mente utilizar alguna función Hash.
 
 9.
-    Mejoré el rendimiento implementando un trie en lugar de hashtable para que pueda obtener un
+        Mejoré el rendimiento implementando un trie en lugar de hashtable para que pueda obtener un
     buen rendimiento en la comprobación, pero anteriormente no convertí el índice de apóstrofos
     correctamente, por lo que hay un error en la revisión ortográfica. Pronto, me di cuenta
     que tengo que hacer un caso especial para apóstrofes y convertirlo a índice 26.
 
 10.
-    Creo que el cuello de botella es el hecho de que usó muchos recuerdos, pero esta es la
+        Creo que el cuello de botella es el hecho de que usó muchos recuerdos, pero esta es la
     compensación de usar una estructura de datos trie. Sin embargo,
     todavía creo que la estructura de datos es la mejor solución para este problema
 
