@@ -1,0 +1,28 @@
+#!/usr/bin/env python3
+
+import os
+import sys
+
+from analyzer import Analyzer
+from termcolor import colored
+
+def main():
+    if len(sys.argv) != 2:
+        sys.exit("Escriba la palabra!")
+
+    positivas = os.path.join(sys.path[0], "palabras_positivas.txt")
+    negativas = os.path.join(sys.path[0], "palabras_negativas.txt")
+
+    analyzer = Analyzer(positivas, negativas)
+
+    scan = analyzer.analyze(sys.argv[1])
+
+    if scan > 0.0:
+        print(colored(":)", "green"))
+    elif scan < 0.0:
+        print(colored(":(", "red"))
+    else:
+        print(colored(":|", "yellow"))
+
+if __name__ == "__main__":
+    main()
